@@ -1,0 +1,11 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: bucket-kcd-isb-a3xbm
+spec:
+  forProvider:
+    region: us-west-1
+    tags:
+      eventName: KCD-Islamabad-Apr-2024
+  providerConfigRef:
+    name: aws-default

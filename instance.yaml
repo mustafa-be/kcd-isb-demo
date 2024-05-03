@@ -1,0 +1,12 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: Instance
+metadata:
+  name: kcd-test-instance-1
+spec:
+  forProvider:
+    ami: ami-0d9858aa3c6322f73
+    instanceType: t2.micro
+    region: us-west-1
+  providerConfigRef:
+    name: aws-default
+
